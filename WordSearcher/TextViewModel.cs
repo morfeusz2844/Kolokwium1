@@ -52,7 +52,10 @@ namespace WordSearcher
 
         public System.Windows.Input.ICommand SearchCommand
         {
-            get { throw new NotImplementedException(); }
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public string SearchResult
@@ -80,7 +83,7 @@ namespace WordSearcher
             }
             set
             {
-                throw new NotImplementedException();
+                value = SearchMethods.First();
             }
         }
 
